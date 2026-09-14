@@ -1,2 +1,3 @@
-# baristas-preview
-Prévisualisation du nouveau site Baristas pour validation par l’équipe.
+# Baristas — Prévisualisation
+
+Copie de validation du nouveau design. Le site principal baristas.info reste indépendant.
