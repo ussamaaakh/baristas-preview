@@ -15,9 +15,6 @@ function setCity(city) {
     button.classList.toggle('active', active);
     button.setAttribute('aria-pressed', String(active));
   });
-  document.getElementById('city-label').textContent = config.label;
-  document.getElementById('page-count').textContent = `${config.pages} pages`;
-  document.getElementById('pdf-link').href = config.pdf;
   gallery.replaceChildren();
   for (let page = 1; page <= config.pages; page += 1) {
     const number = String(page).padStart(2, '0');
@@ -34,12 +31,9 @@ function setCity(city) {
     image.height = 1600;
     if (page > 2) image.loading = 'lazy';
     image.decoding = 'async';
-    const badge = document.createElement('span');
-    badge.textContent = `${page} / ${config.pages}`;
-    link.append(image, badge);
+    link.append(image);
     gallery.append(link);
   }
-  window.scrollTo({ top: 0, behavior: 'instant' });
 }
 
 cityButtons.forEach(button => button.addEventListener('click', () => setCity(button.dataset.city)));
