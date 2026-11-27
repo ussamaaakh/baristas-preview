@@ -7,14 +7,18 @@
 <meta name="theme-color" content="#38271e">
 <link rel="icon" href="assets/img/logo Baristas head.png">
 <link rel="stylesheet" href="assets/css/baristas.css"><link rel="stylesheet" href="assets/css/avis.css">
-<script src="assets/js/avis.js" defer></script><script src="assets/js/test-only.js" defer></script>
+<script src="assets/js/avis.js" defer></script>
 </head>
 <body class="review-page">
 <a class="skip-link" href="#avis-form">Aller au questionnaire</a>
-<div style="padding:10px 20px;text-align:center;background:#38271e;color:#fff;font-size:14px">Version de test · Aucun avis ne sera envoyé ni enregistré</div><header class="review-header"><a href="../index.html" aria-label="Baristas — Accueil"><img src="assets/img/logo Baristas (2).png" alt="Baristas" width="160" height="55"></a><a href="../index.html">Retour au site</a></header>
+<div style="padding:10px 20px;text-align:center;background:#38271e;color:#fff;font-size:14px">Version de test · Envoi des avis activé</div><header class="review-header"><a href="../index.html" aria-label="Baristas — Accueil"><img src="assets/img/logo Baristas (2).png" alt="Baristas" width="160" height="55"></a><a href="../index.html">Retour au site</a></header>
 <main class="review-layout">
 <div class="review-intro"><p class="eyebrow">À VOTRE ÉCOUTE</p><h1>Un bon moment ?<br><em>Racontez-nous.</em></h1><p>Un café, un repas, une pause… Votre regard nous aide à rendre chaque visite encore meilleure.</p><div class="review-caption">Environ 2 minutes · Coordonnées facultatives</div><img class="review-photo" src="assets/img/img scroll 1.jpeg" alt="Pancakes gourmands chez Baristas" width="600" height="520"><blockquote>Les meilleurs moments<br>se construisent ensemble.</blockquote></div>
-<form id="avis-form" class="review-form" action="merci-avis.html" method="GET">
+<form id="avis-form" class="review-form" action="https://formsubmit.co/oussama.khafou1@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="[TEST] Nouvel avis client — Baristas">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://ussamaaakh.github.io/baristas-preview/avis-test/merci-avis.html">
+<input type="text" name="_honey" hidden tabindex="-1" autocomplete="off">
 
 <h2>Comment s’est passée<br>votre visite ?</h2><p class="review-help">Les champs marqués d’un * sont obligatoires.</p>
 <fieldset class="visit-fields"><legend>Votre visite</legend><div class="review-fields"><label>Point de vente *<select name="Lieu" id="review-location" required><option value="">Choisissez votre Baristas</option><option>Morocco Mall</option><option>Parc Mohammedia</option><option>Boulevard Al Qods</option><option>Aeria Mall</option><option>Sela Park Almaz</option><option>Mazeej Mall Laâyoune</option></select></label><label>Date de visite (facultatif)<input type="date" name="Date_visite" id="review-date"></label><label>Votre moment (facultatif)<select name="Moment"><option value="">Sélectionnez</option><option>Petit-déjeuner</option><option>Déjeuner</option><option>Pause café / goûter</option><option>Dîner</option></select></label><label>Table (facultatif)<input name="Table" maxlength="30" placeholder="Ex. 12"></label></div></fieldset>
@@ -26,7 +30,7 @@
 </div>
 <label class="review-label">Un mot pour notre équipe ? (facultatif)<textarea name="Commentaire" rows="4" maxlength="3000" placeholder="Ce que vous avez aimé, ce que nous pourrions améliorer…"></textarea></label>
 <fieldset class="contact-fields"><legend>Restons en contact, si vous le souhaitez</legend><p class="review-help">Laissez votre e-mail si vous souhaitez une réponse à votre avis.</p><div class="review-fields"><label>Prénom (facultatif)<input name="Prenom" autocomplete="given-name" maxlength="100"></label><label>E-mail (facultatif)<input type="email" name="email" autocomplete="email" maxlength="254" placeholder="vous@exemple.com"></label></div></fieldset>
-<button type="submit" class="button review-submit" disabled>Tester l’envoi</button><noscript><p>Activez JavaScript pour tester l’envoi simulé.</p></noscript><p class="review-help review-end">Merci pour votre temps et votre sincérité.</p>
+<button type="submit" class="button review-submit">Envoyer mon avis</button><p class="review-help review-end">Merci pour votre temps et votre sincérité.</p>
 </form></main>
 <footer class="review-footer">Baristas · Coffee. Chocolate. Restaurant.</footer>
 </body></html>
